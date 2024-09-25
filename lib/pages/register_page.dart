@@ -18,20 +18,9 @@ class RegisterPage extends StatelessWidget {
                 height: 20,
               ),
               TextFormField(
-                
                 decoration: const InputDecoration(
-                  contentPadding: EdgeInsets.only(top: 20, bottom: 20, left: 20),
                   hintText: 'Email',
                   labelText: 'Email',
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.red),
-                  ),
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.black),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20),
-                    ),
-                  ),
                 ),
               ),
             ],
