@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:validated_form/widgets/text_form_field.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -7,7 +8,7 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Register'),
+        title: const Text('Registrar'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -17,10 +18,16 @@ class RegisterPage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Email',
-                  labelText: 'Email',
+              textFormField('Nome', 'Nome'),
+              textFormField('Email', 'Email'),
+              textFormField('CPF', 'CPF'),
+              textFormField('Estado', 'Estado'),
+              textFormField('Data de Nascimento', 'Data de Nascimento'),
+              OutlinedButton(
+                onPressed: () {},
+                child: const Text(
+                  'Continuar',
+                  style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
               ),
             ],
