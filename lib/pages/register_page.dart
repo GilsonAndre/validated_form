@@ -12,22 +12,28 @@ class RegisterPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
               const SizedBox(
                 height: 20,
               ),
-              textFormField('Nome', 'Nome'),
-              textFormField('Email', 'Email'),
-              textFormField('CPF', 'CPF'),
-              textFormField('Estado', 'Estado'),
-              textFormField('Data de Nascimento', 'Data de Nascimento'),
-              OutlinedButton(
-                onPressed: () {},
-                child: const Text(
-                  'Continuar',
-                  style: TextStyle(fontSize: 18, color: Colors.black),
+              textFormField('Nome', 'Nome', false),
+              textFormField('Email', 'Email', false),
+              textFormField('CPF', 'CPF', false),
+              textFormField('Estado', 'Estado', false),
+              textFormField('Data de Nascimento', 'Data de Nascimento', false),
+              textFormField('senha', 'Senha', true),
+              const SizedBox(height: 30),
+              SizedBox(
+                height: 60,
+                width: MediaQuery.of(context).size.width,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Continuar',
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
                 ),
               ),
             ],
