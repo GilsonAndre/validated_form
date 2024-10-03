@@ -9,6 +9,9 @@ Widget textFormField(
     padding: const EdgeInsets.only(top: 10, bottom: 10),
     child: TextFormField(
       obscureText: obscureText,
+      onTap: () {
+        
+      },
       decoration: InputDecoration(
         hintText: hintText,
         labelText: labelText,
